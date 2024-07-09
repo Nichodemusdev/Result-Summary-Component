@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.result-box {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 100%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    flex: 1;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 20px;
+    color: hsl(241, 100%, 89%);
+}
+
+.circle {
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1) 0%, hsla(241, 72%, 46%, 0) 100%);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: hsl(241, 81%, 54%);
+    margin-bottom: 20px;
+}
+
+.circle .score {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 0;
+    color: white;
+}
+
+.circle .out-of {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    color: hsl(241, 100%, 89%);
+}
+
+.status {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.description {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: hsl(241, 100%, 89%);
+    width: 90%;
+    white-space: normal;
+    text-align: center;
+}
+
+.summary-box {
+    padding: 30px;
+    flex: 1;
+}
+
+.summary-head {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.score {
+    color: #b3b2b2;
+}
+
+.score strong {
+    color: #333;
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%);
+}
+
+.memory {
+    background-color: hsla(39, 100%, 56%, 0.1);
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%);
+}
+
+.visual {
+    background-color: hsla(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%);
+}
+
+.continue-btn {
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.continue-btn:hover {
+    background-color: hsl(224, 30%, 35%);
+}
+
+button:active {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 100%); 
+}
+
+@media (max-width: 375px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+    }
+
+    .result-box {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    .description {
+        width: 100%;
+    }
+}
+@media (max-width: 414px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+    }
+
+    .result-box {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    .description {
+        white-space: normal;
+        max-width: 600px;
+        word-wrap: break-word;
+        white-space: normal;
+    }
+}
+@media (max-width: 430px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+    }
+
+    .result-box {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    .description {
+        width: 100%;
+    }
+}
